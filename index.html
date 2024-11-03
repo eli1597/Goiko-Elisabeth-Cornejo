@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOIKO</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap">
+
+    <style>
+
+        div.menu {
+            text-align: right;
+            z-index: 200;
+            div#navbar {
+                display: none;
+                min-width: 100%;
+                min-height: 100vh;
+                background-color: #EE2737;
+                position: absolute;
+                top: 0;
+                left:0;
+                z-index: 999;
+                transition: right 0.5s;
+            }
+
+            div#navbar.open {
+                display: flex;
+            }
+
+            @media (max-width: 768px) {
+                div#navbar.open {
+                    display: flex;
+                }
+            }
+        }
+        #closeMenu {
+            position: fixed;
+            padding:40px;
+            padding-bottom: 30px;
+            top:0;
+            left:0;
+            background-color: black;
+        }
+        #closeMenu > span {
+            font-size: 72px
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav id="navegador">
+            <div id="logoMenu">
+                <img src="./img/logoBlanco.png" fill="white" alt="Logotipo Goiko">
+
+                <img id="openMenu" src="./img/icons8-menú-50.png" alt="">
+            </div>
+
+
+            <div class="menu">
+                <div id="navbar">
+                    <div id="closeMenu">
+                        <span>x</span>
+                    </div>
+                    <div id="menuHamb">
+                        <a href="">MI GOIKO</a>
+                        <a href="">CARTA</a>
+                        <a href="">RESERVAR</a>
+                        <a href="">HACER PEDIDO</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="botonesNav">
+                <a href="" class="boton">HACER PEDIDO</a>
+                <a href="" class="botonRojo">RESERVAR</a>
+                <a href="" class="boton">ES</a>
+
+            </div>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <section id="seccionBurguer">
+            <!-- <div class="class="textoMovimiento">
+                <p>KEVIN<span>BACON</span></p>  
+                <p>KEVIN<span>BACON</span></p>
+                <p>KEVIN<span>BACON</span></p>
+                <p>KEVIN<span>BACON</span></p>
+            </div> -->
+
+            <div id="video">
+                <video class="burger__360" playsinline="true" webkit-playsinline="true" x-webkit-airplay="true"
+                    preload="auto" autoplay="autoplay" loop="loop" muted="muted" poster="">
+                    <source src="https://www.goiko.com/es/wp-content/uploads/2023/07/KB-360x2-1.mov"
+                        type="video/mp4; codecs=&quot;hvc1&quot;">
+                    <source src="https://www.goiko.com/es/wp-content/uploads/2023/07/kb-360x2-1.webm" type="video/webm">
+                </video>
+            </div>
+
+        </section>
+
+
+        <section id="dosPorUno">
+            <div class="textoDosPorUno">
+                <p>De domingo cenas a jueves</p>
+                <div class="textoPromo">
+                    <h2>2X1</h2>
+                    <h2>EN BURGERS</h2>
+                </div>
+
+                <div class="decubre">
+                    <H3>¡DESCÚBRELO!</H3>
+                    <!-- <img src="./img/descarga (1).svg" alt=""> -->
+                </div>
+
+            </div>
+        </section>
+
+        <section class="textoMovimiento">
+            <div>
+                <h2>CARTACARTACARTACARTACARTACARTACARTACARTACARTACARTA</h2>
+            </div>
+        </section>
+
+
+        <section class="carta">
+            <article class="productos">
+                <div class="cuadrado">
+                    <img src="./img/TO-SHARE.png" alt="">
+                </div>
+                <div class="textoArticulos">
+                    <h4>Entrantes</h4>
+                    <p>To share or not to share</p>
+                </div>
+            </article>
+
+            <article class="productos">
+                <div class="cuadrado">
+                    <img src="./img/BURGERS.png" alt="">
+                </div>
+                <div class="textoArticulos">
+                    <h4>Burgers</h4>
+                    <p>Las de siempre</p>
+                </div>
+            </article>
+
+            <article class="productos">
+                <div class="cuadrado">
+                    <img src="./img/SMASH-3.png" alt="">
+                </div>
+                <div class="textoArticulos">
+                    <h4>Smash Burgers</h4>
+                    <p>Smash the beef!</p>
+                </div>
+            </article>
+        </section>
+
+
+        <section id="ventas">
+            <h3>KEVIN BACON VENDIDAS ESTE AÑO</h3>
+            <div id="cifras">
+                <img src="./img/d (1).svg" alt="">
+                <img src="./img/0 (1).svg" alt="">
+                <img src="./img/4 (1).svg" alt="">
+                <img src="./img/4 (1).svg" alt="">
+                <img src="./img/4 (1).svg" alt="">
+                <img src="./img/d (1).svg" alt="">
+                <img src="./img/6 (1).svg" alt="">
+            </div>
+        </section>
+
+
+        <section id="friends">
+            <div>
+                <img src="./img/coin-57527175.png" alt="">
+            </div>
+            <div class="textoDerecha">
+                <h5>SEAMOS<br>FRIENDS WITH BENEFITS</h5>
+                <p>Únete al club más top de GOIKO y accede a ofertas y experiencias exclusivas</p>
+                <a href="" class="boton">REGISTRARSE</a>
+            </div>
+        </section>
+
+        <section id="foodtruck">
+            <video autoplay loop muted playsinline>
+                <source src="./foodtruck.mp4" type="video/mp4">
+            </video>
+            <div class="contenido">
+                <h2>FOODTRUCK</h2>
+                <p>¡GOIKO sobre ruedas! Llevamos el chorreo a donde tú estés. La Bestia y la Mini Bestia están ready
+                    para el party.</p>
+                <h4>SABER MÁS</h4>
+            </div>
+
+        </section>
+
+        <section id="goikocina">
+            <div id="izq">
+                <img src="./img/mandil.svg" alt="">
+
+                <p>Prepárate para chuparte los dedos...</p>
+                <h3>Goikocina. Los ingredientes más top, ahora en tu cocina</h2>
+                    <a href="" class="boton">DESCUBRE GOIKOCINA</a>
+            </div>
+
+            <div id="der">
+                <img src="./img/salsa.png" id= "salsa"  alt="">
+                <img src="./img/pan.png" id= "pan" alt="">
+                <img src="./img/burger.png" id= "carne" alt="">
+            </div>
+        </section>
+
+
+        <section class="textoMovimiento">
+            <div>
+                <h2>NEWSGOIKONEWSGOIKONEWSGOIKONEWS</h2>
+            </div>
+        </section>
+
+        <section class="carta">
+            <!-- <div id="fot"> -->
+            <article class="productos">
+                <div class="cuadrado">
+                    <img src="./img/JL171223GOIKO-7-1024x683.jpg" alt="">
+                </div>
+                <div class="textoArticulos">
+                    <h4>NOTICIAS</h4>
+                    <p>Disfruta de la mejor hamburguesería de Sevilla</p>
+                </div>
+            </article>
+
+            <article class="productos">
+                <div class="cuadrado">
+                    <img src="./img/BurgerEspecial_VAL_LaFallera_H-copia-1024x512.png" alt="">
+                </div>
+                <div class="textoArticulos">
+                    <h4>NOTICIAS</h4>
+                    <p>Disfruta de la mejor hamburguesa de Valencia</p>
+                </div>
+            </article>
+
+            <article class="productos">
+                <div class="cuadrado">
+                    <img src="./img/RESERVAS_1800x1200-1024x683.png" alt="">
+                </div>
+                <div class="textoArticulos">
+                    <h4>NOTICIAS</h4>
+                    <p>Disfruta de la mejor hamburguesería de Madrid</p>
+                </div>
+            </article>
+        </section>
+
+        <div id="botonCarta">
+            <a href="" class="boton">VER TODAS LAS NEWS</a>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="fondoBlanco">
+        <div id="footerTop">
+            <div id="logoG">
+                <img src="./img/descarga (6).svg" alt="">
+            </div>
+            <div class="enlaces">
+                <ul>
+                    <li><a href="" class="textoEnlaces"><span>CARTA</span></a></li>
+                    <li><a href="" class="textoEnlaces"><span>RESERVAR</span></a></li>
+                    <li><a href="" class="textoEnlaces"><span>HACER PEDIDO</span></a></li>
+                    <li><a href="" class="textoEnlaces"><span>RESTAURANTES</span></a></li>
+                    <li><a href="" class="textoEnlaces"><span>FRIENDS WITH BENEFITS</span></a></li>
+                    <li><a href="" class="textoEnlaces"><span>FOODTRUCKS</span></a></li>
+                    <li><a href="" class="textoEnlaces"><span>GOIKOCINA</span></a></li>
+                    <li><a href="" class="textoEnlaces"><span>ÚNETE AL EQUIPO</span></a></li>
+                </ul>
+            </div>
+
+            <div class="enlaces2">
+                <ul>
+                    <li><a href="" class="textoEnlaces2"><span>CONÓCENOS</span></a></li>
+                    <li><a href="" class="textoEnlaces2"><span>PRENSA</span></a></li>
+                    <li><a href="" class="textoEnlaces2"><span>FACTURA ONLINE</span></a></li>
+                    <li><a href="" class="textoEnlaces2"><span>RESTAURANTES</span></a></li>
+                    <li><a href="" class="textoEnlaces2"><span>ALÉRGENOS</span></a></li>
+                    <li><a href="" class="textoEnlaces2"><span>BLOG</span></a></li>
+                    <li><a href="" class="textoEnlaces2"><span>RSC</span></a></li>
+                    <li><a href="" class="textoEnlaces2" ><span>ATENCIÓN AL CLIENTE</span></a></li>
+                    <li><a href="" class="textoEnlaces2"><span>BASES Y CONDICIONES</span></a></li>
+                    <li><a href="" class="textoEnlaces2"><span>BUZÓN ÉTICO</span></a></li>
+                    <li><a href="" class="textoEnlaces2"><span>POLÍTICA DE PRIVACIDAD</span></a></li>
+                    <li><a href="" class="textoEnlaces2"><span>CÓDIGO ÉTICO</span></a></li>
+                    <li><a href="" class="textoEnlaces2"><span>PRINCIPIOS SISTEMA INTERNO DE INFORMACIÓN </span></a></li>
+                </ul>
+            </div>
+        </div>
+    
+        <div id="footerRRSS">
+            <img src="./img/face.svg" alt="">
+            <img src="./img/face.svg" alt="">
+            <img src="./img/insta.svg" alt="">
+            <img src="./img/linkedin.svg" alt="">
+        </div>
+
+        <section class="textoMovimientoBlanco">
+            <div>
+                <h2>FOREVERCHORREOFOREVERCHORREOFOREVERCHORREO</h2>
+            </div>
+        </section>
+    
+
+        <div id="final">
+            <span><b>©2024 GOIKO GRILL GROUP SL,</b> Todos los derechos reservados</span>
+            <div id="legal">
+                <a href="">AVISO LEGAL</a>
+                <a href="">POLITICA DE COOKIES</a>
+                <a href="">CONDICIONES DE VENTA</a>
+            </div>
+            <div><a href="">.</a></div>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+<script>
+
+    //Selecciono elementos id del código para realizar las acciones
+    const hamburger = document.getElementById('openMenu');
+    const navbar = document.getElementById('navbar');
+    const closeBtn = document.getElementById('closeMenu');
+
+    // Para abrir el menú al hacer clic en el botón hamburguesa
+    hamburger.addEventListener('click', () => {
+        console.log("clicko")
+        navbar.classList.add('open');
+    });
+
+    // Para cerrar menú al hacer clic en el botón "X"
+    closeBtn.addEventListener('click', () => {
+        navbar.classList.remove('open');
+    });
+
+   
+
+</script>
+
+</html>

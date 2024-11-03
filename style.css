@@ -1,0 +1,703 @@
+/* @font-face {
+    font-family: "Knockout-bold";
+    src: url("https://www.1001fonts.com/knockout-font.html");
+} */
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&display=swap');
+
+@import url('https://www.goiko.com/es/wp-content/themes/goiko2020/dist/fonts/Knockout-HTF33-JuniorHeviwt.291432cdf9638ce91c1d.woff2');
+
+@import url('https://www.goiko.com/es/wp-content/themes/goiko2020/dist/fonts/Knockout-HTF73-FullHeviweight.386a901fd564bd4a47c7.woff2');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Kantumruy+Pro:wght@100..700&display=swap');
+
+body {
+    margin: auto;
+    background-color: black;
+}
+
+.bowlby-one-regular {
+    font-family: "Bowlby One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kantumruy-pro-uniquifier {
+    font-family: "Kantumruy Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300px;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    /* background-color: black; */
+}
+
+
+h2 {
+    font-size: 90px;
+    /* font-weight: bold; */
+    /* padding-bottom: 15px; */
+    font-family: "Bowlby One", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+h3 {
+    font-size: 50px;
+    /* padding-bottom: 15px; */
+    font-family: "Bowlby One", sans-serif;
+    font-style: normal;
+}
+
+h4 {
+    font-size: 24px;
+    /* padding-bottom: 15px; */
+    font-family: "Bowlby One", sans-serif;
+    font-style: normal;
+}
+
+h5 {
+    font-size: 65px;
+    /* padding-bottom: 15px; */
+    font-family: "Bowlby One", sans-serif;
+}
+
+p {
+    font-size: 18px;
+    /* padding-bottom: 15px; */
+    font-family: "Kantumruy Pro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300px;
+    font-style: normal;
+}
+
+a {
+    font-size: 15px;
+    /* padding-bottom: 15px; */
+    font-family: "Bowlby One";
+}
+
+
+
+
+#navegador {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    background-color: black;
+}
+
+#logoMenu {
+    display: flex;
+    justify-content: left;
+    width: 15%;
+    align-items: center;
+}
+
+#logoMenu>img {
+    max-width: 100%;
+    width: 45px;
+    margin: 30px 25px;
+}
+
+#botonesNav {
+    width: 72%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#botonesNav a {
+    margin: 25px 10px;
+}
+
+a.boton {
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    background-color: transparent;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: inline-flex;
+}
+
+a.boton:hover {
+    color: black;
+    border: 2px solid white;
+    background-color: white;
+}
+
+a.botonRojo {
+    color: white;
+    border: 2px solid #ee2737;
+    border-radius: 30px;
+    background-color: #ee2737;
+    padding: 12px 20px;
+    text-decoration: none;
+    display: inline-flex;
+}
+
+a.botonRojo:hover {
+    color: black;
+    border: 2px solid rgb(255, 208, 0);
+    background-color: rgb(255, 208, 0);
+}
+
+
+#seccionBurguer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    /* Se ajusta al 100% de la altura de la ventana */
+    position: relative;
+    background-color: black;
+    /* Color de fondo opcional */
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-width: 100%;
+    /* Para asegurarte de que no ocupe más del 90% del ancho de la pantalla */
+    height: auto;
+}
+
+#video>video {
+    max-width: 100%;
+    /* Para que el video nunca exceda el contenedor */
+    height: auto;
+    display: block;
+}
+
+
+div.textoFondo {
+    width: 40%;
+    /* display: flex; */
+    flex-direction: column;
+    font-size: 150px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+div.textoFondo p {
+    line-height: 0.7;
+}
+
+
+section#dosPorUno {
+    background-image: url(./img/Carrusel_2x1.jpg);
+    background-size: cover;
+    height: 70vh;
+    border-top: 2px solid white;
+    background-position: center;
+    position: relative;
+    /* Añadido para permitir posicionamiento de los elementos hijos */
+    color: white;
+    /* Moved here to apply to the entire section */
+}
+
+.textoDosPorUno {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: end;
+    padding-bottom: 50px;
+    margin: auto;
+
+}
+
+section>div>div.descubre {
+    display: flex;
+}
+
+.textoMovimiento {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.textoMovimiento div {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.carta {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 25px;
+    margin: 70px;
+    background-color: black;
+    height: 45vh;
+}
+
+.productos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.textoArticulos {
+    display: flex;
+    align-self: start;
+    flex-direction: column;
+}
+
+#imagenCarta {
+    display: flex;
+    flex-direction: column;
+}
+
+.cuadrado {
+    display: flex;
+    border: 2px solid white;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.cuadrado>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#ventas {
+    background-color: black;
+    justify-content: center;
+    justify-items: center;
+}
+
+#ventas h3 {
+    padding: 50px 0px;
+    display: flex;
+    /* margin: auto; */
+    justify-content: center;
+}
+
+#cifras {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+
+}
+
+#cifras .divisor {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#cifras img {
+    width: 5.5%;
+    margin-right: 15px;
+}
+
+#cifras img:nth-child(1) {
+    margin-right: 40px;
+}
+
+#cifras img:nth-child(4) {
+    margin-right: 40px;
+}
+
+
+#friends {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(32, 3, 1) 50%, rgb(87, 6, 6) 100%);
+    display: flex;
+    justify-content: center;
+    padding: 10rem 0;
+    height: 85vh;
+    width: 100%;
+    align-items: center;
+}
+
+#friends>div>img {
+    width: 85%;
+    max-width: 100%;
+    padding-right: 40px;
+    align-items: center;
+    /* width: 100%; */
+}
+
+#friends>div.textoDerecha {
+    width: 40%;
+}
+
+#friends>div.textoDerecha a.boton {
+    background-color: none;
+    margin: 15px 0 0 0;
+}
+
+
+#foodtruck {
+    position: relative;
+    overflow: hidden;
+    height: 80vh;
+}
+
+
+#foodtruck video {
+    position: absolute;
+    /* Coloca el video detrás */
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Asegúrate de que cubra el área */
+    transform: translate(-50%, -50%);
+    /* Centra el video */
+    z-index: -1;
+    /* Asegúrate de que el video esté detrás del contenido */
+}
+
+.contenido {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    justify-content: end;
+    padding-bottom: 50px;
+    margin: auto;
+
+}
+
+
+#goikocina {
+    background-color: black;
+    height: 90vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    /* justify-content:space-evenly; */
+    overflow: hidden;
+    align-items: center;
+}
+
+
+#goikocina>div#izq {
+    /* display: flex; */
+    width: 35%;
+}
+
+#goikocina>div#izq>img {
+    width: 11%;
+    max-width: 100%;
+    padding-bottom: 90px;
+}
+
+#goikocina>div#izq>p {
+    padding-bottom: 30px;
+}
+
+#goikocina>div#der {
+    display: flex;
+    /* justify-content: left; */
+    width: 40%;
+    max-width: 100%;
+    align-items: center;
+}
+
+#salsa {
+    position: absolute;
+    width: 15%;
+    transform: rotate(-45deg);
+    left: 700px;
+}
+
+#pan {
+    position: absolute;
+    width: 25%;
+    transform: rotate(45deg);
+    left: 1300px;
+}
+
+#carne {
+    position: absolute;
+    width: 25%;
+    transform: rotate(15deg);
+    left: 1000px;
+}
+
+
+#botonCarta {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.fondoBlanco {
+    background-color: white;
+}
+
+#footerTop {
+    display: flex;
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    padding: 50px 0px;
+}
+
+#logoG {
+    width: 50%;
+    min-width: 40%;
+}
+
+#logoG img {
+    width: 12%;
+}
+
+.enlaces {
+    width: 100%;
+
+}
+
+.textoEnlaces {
+    font-size: 44px;
+    font-family: "Bowlby One", sans-serif;
+    font-weight: 700;
+}
+
+
+.textoEnlaces2 {
+    font-size: 25px;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-weight: 600;
+}
+
+.enlaces2 {
+    width: 100%;
+}
+
+.enlaces ul li span {
+    color: black;
+    text-decoration: none;
+}
+
+.enlaces2 ul li span {
+    color: black;
+    text-decoration: none;
+}
+
+#footerRRSS {
+    background-color: white;
+    width: 90%;
+    display: flex;
+    gap: 15px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#footerRRSS img {
+    width: 2%;
+}
+
+.textoMovimientoBlanco h2 {
+    color: black !important;
+    overflow: hidden;
+}
+
+
+.textoMovimientoBlanco div {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#final {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    font-size: 15px;
+    font-family: "Kantumruy Pro", sans-serif;
+    font-weight: 500;
+}
+
+#final span {
+    color: black;
+}
+
+
+#final b {
+    color: black;
+    font-weight: bold;
+}
+
+#final div {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+
+}
+
+#final div>a {
+    color: black;
+}
+
+#menuHamb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 300px;
+
+}
+
+
+#menuHamb a {
+    font-size: 100px;
+    text-decoration: none;
+    align-self: start;
+    align-items: start;
+}
+
+
+/* Ajustes para tablets y pantallas medianas */
+@media (max-width: 1024px) {
+    #salsa {
+        display: none;
+    }
+
+    #pan {
+        display: none;
+    }
+
+    #carne {
+        display: none;
+    }
+
+    .carta {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footerTop {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textoDosPorUno {
+        width: 100%;
+    }
+
+    .carta {
+        width: 100%;
+        gap: 10px;
+        margin: 0px;
+        height: 100%;
+    }
+
+    .productos {
+        padding: 5px;
+    }
+
+    .contenido {
+        width: 100%;
+    }
+
+
+    #goikocina {
+        width: 100%;
+    }
+
+    #footerTop {
+        width: 100%;
+    }
+
+    #footerRRSS {
+        width: 100%;
+    }
+
+    #final {
+        width: 100%;
+    }
+
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-size: 25px;
+    }
+
+    a.boton {
+        display: none;
+    }
+
+    .textoDosPorUno {
+        padding-left: 20px;
+    }
+
+    #ventas h3 {
+        text-align: center;
+    }
+
+    #friends {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #friends div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+
+    }
+
+    #friends div img {
+        padding: 0px;
+    }
+    .textoDerecha {
+        display:flex;
+        flex-direction: column;
+    }
+    #foodtruck .contenido {
+        padding-left: 20px;
+    }
+    #goikocina {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #final {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+    #legal {
+        display:flex;
+        flex-direction: column;
+    }
+    #footerTop {
+        padding-left:10px;
+    }
+}
